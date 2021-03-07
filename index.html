@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <main>
+            <div class="main__display">
+                <div class="chart-container">
+                    <canvas id="myChart"></canvas>
+                </div>
+                <div class="main__single-country-info" hidden> </div>
+            </div>
+            <div class="loading">
+                Loading...
+            </div>
+
+            <div class="options">
+                <div class="row region">Regions:
+                    <button data-region="global">Global</button>
+                    <button data-region="asia">Asia</button>
+                    <button data-region="americas">America</button>
+                    <button data-region="africa">Africa</button>
+                    <button data-region="europe">Europe</button>
+                </div>
+
+                <div class="row types">Types:
+                    <button data-type="cases"> Confirmed Cases</button>
+                    <button data-type="deaths">Number of Deaths</button>
+                    <button data-type="recovered">Number of recovered</button>
+                    <button data-type="critical">Number of critical condition</button>
+                </div>
+            </div>
+            <hr>
+            <h4>Countries:</h4>
+            <section>
+                <div class="countries">
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

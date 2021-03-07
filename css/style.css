@@ -1,0 +1,26 @@
+.main-display {}
+
+body {
+    background: #333;
+}
+
+main {
+    background: #f6f6f6;
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.chart-container {
+    position: relative;
+    margin: 0 auto;
+    height: 60vh;
+    background: #e5e5ee;
+    border-radius: 5px;
+}
+
+.loading {
+    font-size: 40px;
+}
